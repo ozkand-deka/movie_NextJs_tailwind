@@ -15,7 +15,9 @@
 }
 
 body {
-  background-color: black;
-  color: white; /* Yazı rengini beyaz yap */
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-white text-black font-sans; 
+}
+
+.dark body {
+  @apply bg-zinc-950 text-white;
 }

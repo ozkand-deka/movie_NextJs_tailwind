@@ -1,7 +1,8 @@
 
-import Provider from "@/Provider";
+import Provider from "../Provider"
 import Header from "./components/Header";
 import "./globals.css";
+import Tabs from "./components/Tabs";
 
 
 
@@ -11,6 +12,7 @@ export default function RootLayout({ children }) {
       <body>
         <Provider>
           <Header />
+          <Tabs />
           {children}
 
         </Provider>
