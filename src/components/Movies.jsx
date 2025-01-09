@@ -7,7 +7,7 @@ const router = useRouter()
 
   return (
     <div onClick={()=>router.push(`/movie/${dt?.id}`)} className="w-[500px] imgContainer relative cursor-pointer">
-      <Image style={{objectFit:"cover"}}
+      <Image   style={{ objectFit: "cover", width: "100%", height: "auto" }}
         width={500}
         height={400}
         src={`https://image.tmdb.org/t/p/original/${
