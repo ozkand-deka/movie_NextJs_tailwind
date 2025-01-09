@@ -28,7 +28,7 @@ const Tabs = () => {
         {tabs.map((item,i)=>{
             return (
                 <div key={i} className='flex justify-around gap-3 text-sm font-medium  '>
-                    <Link className= {`cursor-pointer hover:opacity-75 ${item.link === genre ? "underline text-red-600": ""} `} href={`/?genre=${item.link}`}>{item.title}</Link>
+                    <Link className= {`cursor-pointer hover:opacity-75 ${item.link === genre ? "underline underline-offset-8 text-red-600": ""} `} href={`/?genre=${item.link}`}>{item.title}</Link>
                 </div>
             )
         })}
